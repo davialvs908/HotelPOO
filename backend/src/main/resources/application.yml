@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/hotelpoo}
+    username: ${SPRING_DATASOURCE_USERNAME:hotel}
+    password: ${SPRING_DATASOURCE_PASSWORD:hotel}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  jackson:
+    default-property-inclusion: non_null
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:hotelpoo-dev-secret-chave-com-pelo-menos-32-chars}
+    expiration-hours: ${JWT_EXPIRATION_HOURS:8}

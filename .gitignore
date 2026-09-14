@@ -1,0 +1,11 @@
+backend/target/
+backend/.idea/
+*.class
+*.log
+.idea/
+*.iml
+frontend/node_modules/
+frontend/dist/
+nbproject/private/
+build/
+dist/

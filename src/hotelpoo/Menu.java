@@ -501,7 +501,7 @@ public class Menu {
             }
             
             
-            String feedbackFormatado = "\"" + feedbackTexto + "\" – " + 
+            String feedbackFormatado = "\"" + feedbackTexto + "\" - " + 
                 cliente.getNome().split(" ")[0] + " " + 
                 cliente.getNome().split(" ")[cliente.getNome().split(" ").length - 1].charAt(0) + ".";
             
